@@ -19,10 +19,9 @@ class CustomKeyboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height*1/3,
+      height: MediaQuery.of(context).size.height * 1 / 3,
       color: Colors.grey,
       child: Column(
-
         children: [
           buildRowOne(),
           buildRowTwo(),
@@ -102,7 +101,10 @@ class CustomKeyboard extends StatelessWidget {
         children: [
           TextKey(
             text: '.',
-            icon: const Icon(Icons.circle,size: 4,),
+            icon: const Icon(
+              Icons.circle,
+              size: 4,
+            ),
             onTextInput: _textInputHandler,
           ),
           TextKey(
